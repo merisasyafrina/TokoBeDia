@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TokoBediaa.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> TokoBeDia </title>
+
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: lightgreen;
+            padding: 20px;
+            width: 100%;
+        }
+        .content{
+            height: auto;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0;
+            color: white;
+            width: 100%;
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <header>
+        <asp:Label Text="TokoBeDia" Font-Size="XX-Large" ForeColor="White" runat="server" />&nbsp;
+    </header>
+
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <footer>
+            <h4> &copy; TokoBeDia 2020 </h4>
+    </footer>
+
+    </form>
+</body>
+</html>
